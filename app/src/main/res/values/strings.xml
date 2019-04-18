@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android_SlidingConflictDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="a_fragment">A fragment</string>
+    <string name="b_fragment">B fragment</string>
+
+</resources>
