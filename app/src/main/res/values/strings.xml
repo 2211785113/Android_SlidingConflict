@@ -6,4 +6,7 @@
     <string name="a_fragment">A fragment</string>
     <string name="b_fragment">B fragment</string>
 
+    <string name="left">左侧</string>
+    <string name="right">右侧</string>
+
 </resources>
