@@ -10,11 +10,11 @@ import java.util.List;
  * Created by liangxingjian0614 on 2019/4/18.
  */
 
-public class SubPagerAdapter extends FragmentPagerAdapter {
+public class SubAdapter extends FragmentPagerAdapter {
 
     private List<Fragment> list;
 
-    public SubPagerAdapter(FragmentManager fm, List<Fragment> list) {
+    public SubAdapter(FragmentManager fm, List<Fragment> list) {
         super(fm);
         this.list = list;
     }
@@ -27,5 +27,10 @@ public class SubPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return list.size();
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return position == 0 ? "左边" : "右边";
     }
 }

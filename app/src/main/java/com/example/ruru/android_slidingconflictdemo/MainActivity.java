@@ -5,8 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.ruru.android_slidingconflictdemo.R;
-import com.example.ruru.android_slidingconflictdemo.first_demo.SwipeAndViewActivity;
+import com.example.ruru.android_slidingconflictdemo.first_demo.FirstActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +17,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void swipeAndView(View v) {
-        startActivity(new Intent(this, SwipeAndViewActivity.class));
+        startActivity(new Intent(this, FirstActivity.class));
     }
 }
