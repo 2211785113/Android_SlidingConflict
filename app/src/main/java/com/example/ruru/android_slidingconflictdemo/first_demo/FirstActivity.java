@@ -6,6 +6,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 
 import com.example.ruru.android_slidingconflictdemo.R;
 
@@ -15,7 +18,7 @@ import java.util.List;
 public class FirstActivity extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeRefreshLayout;
-    private ViewPager viewPager;
+    private CustomViewPager viewPager;
     private TabLayout tabLayout;
 
     @Override
@@ -42,20 +45,21 @@ public class FirstActivity extends AppCompatActivity {
         viewPager.setAdapter(new SubAdapter(getSupportFragmentManager(), list));
         tabLayout.setupWithViewPager(viewPager);
 
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        //第一种
+        viewPager.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                System.out.println("onPageScrolled");
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                System.out.println("onPageSelected");
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-                System.out.println("onPageScrollStateChanged");
+            public boolean onTouch(View v, MotionEvent event) {
+                Log.d(getClass().getName(), "action=" + event.getAction());
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_MOVE://2
+                        swipeRefreshLayout.setEnabled(false);
+                        break;
+                    case MotionEvent.ACTION_UP://1
+                    case MotionEvent.ACTION_CANCEL://3
+                        swipeRefreshLayout.setEnabled(true);
+                        break;
+                }
+                return false;
             }
         });
     }
@@ -66,8 +70,13 @@ public class FirstActivity extends AppCompatActivity {
             public void onRefresh() {
                 //执行刷新操作
                 System.out.println("刷新");
-                swipeRefreshLayout.setRefreshing(false);
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        swipeRefreshLayout.clearAnimation();
     }
 }
