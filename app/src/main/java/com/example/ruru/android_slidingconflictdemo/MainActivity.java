@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void swipeAndView(View v) {
+    public void srlAndVp(View v) {
         startActivity(new Intent(this, FirstActivity.class));
     }
 }
