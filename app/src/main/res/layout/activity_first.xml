@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".first_demo.FirstActivity">
+    tools:context=".DifferentDirection.FirstActivity">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
@@ -42,7 +42,7 @@
                 android:layout_height="@dimen/tab_height"
                 android:layout_toRightOf="@id/view" />
 
-            <com.example.ruru.android_slidingconflictdemo.first_demo.CustomViewPager
+            <com.example.ruru.android_slidingconflictdemo.DifferentDirection.CustomViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

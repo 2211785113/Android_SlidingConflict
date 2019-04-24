@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ruru.android_slidingconflictdemo.first_demo.BFragment">
+    tools:context="com.example.ruru.android_slidingconflictdemo.DifferentDirection.BFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

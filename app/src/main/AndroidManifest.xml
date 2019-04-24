@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
-        <activity android:name=".first_demo.FirstActivity"></activity>
+        <activity android:name=".DifferentDirection.FirstActivity"></activity>
 
     </application>
 
