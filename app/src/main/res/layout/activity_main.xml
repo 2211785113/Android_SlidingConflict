@@ -4,16 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
     tools:context="com.example.ruru.android_slidingconflictdemo.MainActivity">
 
-    <Button
+    <TextView
+        android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="srlAndVp"
-        android:text="SRL+VP"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="SameDirection" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SRL_SV"
+        android:text="1_SRL_SV"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SV_LV"
+        android:text="2_SV_LV"
+        app:layout_constraintTop_toBottomOf="@id/bt1" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SRL_LV"
+        android:text="3_SRL_LV"
+        app:layout_constraintTop_toBottomOf="@id/bt2" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="VP_VP"
+        android:text="4_VP_VP"
+        app:layout_constraintTop_toBottomOf="@id/bt3" />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="DifferentDirection"
+        app:layout_constraintTop_toBottomOf="@id/bt4" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SRL_VP"
+        android:text="1_SRL_VP"
+        app:layout_constraintTop_toBottomOf="@id/tv2" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="SV_VP"
+        android:text="2_SV_VP"
+        app:layout_constraintTop_toBottomOf="@id/btn1" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="LV_VP"
+        android:text="3_LV_VP"
+        app:layout_constraintTop_toBottomOf="@id/btn2" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="VP_LV"
+        android:text="4_VP_LV"
+        app:layout_constraintTop_toBottomOf="@id/btn3" />
+
 
 </android.support.constraint.ConstraintLayout>

@@ -11,12 +11,22 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"></action>
-                <category android:name="android.intent.category.LAUNCHER"></category>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DifferentDirection.FirstActivity"></activity>
 
+        <activity android:name=".sameDirection.SRL_LV" />
+        <activity android:name=".sameDirection.SRL_SV" />
+        <activity android:name=".sameDirection.SV_LV" />
+        <activity android:name=".sameDirection.VP_VP" />
+
+        <activity android:name=".differentDirection.SRL_VP" />
+        <activity android:name=".differentDirection.SV_VP" />
+        <activity android:name=".differentDirection.LV_VP" />
+        <activity android:name=".differentDirection.VP_LV" />
+        <activity android:name=".differentDirection.HSV_LV"/>
     </application>
 
 </manifest>
