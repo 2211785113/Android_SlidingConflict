@@ -22,21 +22,23 @@
         android:text="1_SRL_SV"
         app:layout_constraintTop_toBottomOf="@id/tv1" />
 
+
     <Button
         android:id="@+id/bt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SV_LV"
-        android:text="2_SV_LV"
+        android:onClick="SRL_RV"
+        android:text="2_SRL_RV"
         app:layout_constraintTop_toBottomOf="@id/bt1" />
 
     <Button
         android:id="@+id/bt3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SRL_LV"
-        android:text="3_SRL_LV"
+        android:onClick="SV_RV"
+        android:text="3_SV_RV"
         app:layout_constraintTop_toBottomOf="@id/bt2" />
+
 
     <Button
         android:id="@+id/bt4"
@@ -75,17 +77,41 @@
         android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="LV_VP"
-        android:text="3_LV_VP"
+        android:onClick="VP_SV"
+        android:text="3_VP_SV"
         app:layout_constraintTop_toBottomOf="@id/btn2" />
 
     <Button
         android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="VP_LV"
-        android:text="4_VP_LV"
+        android:onClick="LV_VP"
+        android:text="4_LV_VP"
         app:layout_constraintTop_toBottomOf="@id/btn3" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="VP_LV"
+        android:text="5_VP_LV"
+        app:layout_constraintTop_toBottomOf="@id/btn4" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="test"
+        app:layout_constraintTop_toBottomOf="@id/btn5" />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="METHOD_TEST"
+        android:text="METHOD_TEST"
+        app:layout_constraintTop_toBottomOf="@id/tv3" />
 
 
 </android.support.constraint.ConstraintLayout>

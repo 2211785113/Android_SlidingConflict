@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sameDirection.SRL_SV">
+    tools:context=".sameDirection.SRL_SV_1">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/mRefreshLayout"
@@ -40,10 +40,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
                     android:src="@mipmap/ic_launcher" />
-
-
-
-
             </LinearLayout>
 
         </ScrollView>
