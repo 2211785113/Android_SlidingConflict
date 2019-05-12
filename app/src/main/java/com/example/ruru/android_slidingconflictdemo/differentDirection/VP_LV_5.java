@@ -27,6 +27,5 @@ public class VP_LV_5 extends AppCompatActivity {
 
     private void initData() {
         viewPager.setAdapter(new SubVpAdapter(getSupportFragmentManager(), DataModel.getFragmentList4()));
-
     }
 }

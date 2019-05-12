@@ -34,7 +34,7 @@ public class SRL_RV_2 extends AppCompatActivity {
 
     private void initData() {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(new SubRvAdapter(this, DataModel.getStringList()));
+        recyclerView.setAdapter(new SubRvAdapter(this, DataModel.getStringList1()));
 
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override

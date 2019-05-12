@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import static android.view.MotionEvent.ACTION_MOVE;
 
 /**
- * 外层
+ * 不同方向5-外层
  * Created by SophieRu on 2019/5/9
  */
 public class CustomVP extends ViewPager {
@@ -26,20 +26,10 @@ public class CustomVP extends ViewPager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        int x = (int) ev.getX();
-        int y = (int) ev.getY();
-
-        switch (ev.getAction()) {
-            case ACTION_MOVE:
-                int deltaX = x - lastX;
-                int deltaY = y - lastY;
-                if (deltaX > deltaY) {
-                    return true;
-                }
-                break;
+        if (ev.getAction() == MotionEvent.ACTION_DOWN) {
+            super.onInterceptTouchEvent(ev);
+            return false;
         }
-        lastX = (int) ev.getX();
-        lastY = (int) ev.getY();
-        return false;
+        return true;
     }
 }

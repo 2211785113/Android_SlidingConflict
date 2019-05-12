@@ -6,7 +6,7 @@ import android.view.MotionEvent;
 import android.widget.ListView;
 
 /**
- * 内层
+ * 不同方向5-内层
  * Created by SophieRu on 2019/5/9
  */
 public class CustomLV extends ListView {

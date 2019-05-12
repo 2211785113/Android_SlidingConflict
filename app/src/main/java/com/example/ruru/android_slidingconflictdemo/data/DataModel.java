@@ -18,10 +18,18 @@ import java.util.List;
  */
 public class DataModel {
 
-    public static List<String> getStringList() {
+    public static List<String> getStringList1() {
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 50; i++) {
             list.add("item" + i);
+        }
+        return list;
+    }
+
+    public static List<String> getStringList2() {
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            list.add("你好" + i);
         }
         return list;
     }

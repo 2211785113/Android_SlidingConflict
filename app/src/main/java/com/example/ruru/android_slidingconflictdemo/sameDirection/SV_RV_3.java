@@ -31,6 +31,6 @@ public class SV_RV_3 extends AppCompatActivity {
 
     private void initData() {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(new SubRvAdapter(this, DataModel.getStringList()));
+        recyclerView.setAdapter(new SubRvAdapter(this, DataModel.getStringList1()));
     }
 }

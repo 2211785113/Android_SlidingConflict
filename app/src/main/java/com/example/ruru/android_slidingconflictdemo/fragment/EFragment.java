@@ -28,7 +28,7 @@ public class EFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_e, container, false);
         ListView listView = view.findViewById(R.id.listView);
-        listView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.item, R.id.tv, DataModel.getStringList()));
+        listView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.item, R.id.tv, DataModel.getStringList1()));
         return view;
     }
 
