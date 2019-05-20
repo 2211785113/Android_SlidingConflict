@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
-    tools:context=".differentDirection.SRL_VP_1">
+    tools:context=".differentDirection.SRL_VP_1_main">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"

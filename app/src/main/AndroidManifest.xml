@@ -20,10 +20,10 @@
         <activity android:name=".sameDirection.SRL_SV_1" />
         <activity android:name=".sameDirection.SV_RV_3" />
         <activity android:name=".sameDirection.VP_VP" />
-        <activity android:name=".differentDirection.SRL_VP_1" />
+        <activity android:name=".differentDirection.SRL_VP_1_main" />
         <activity android:name=".differentDirection.SV_VP_2" />
         <activity android:name=".differentDirection.LV_VP_4" />
-        <activity android:name=".differentDirection.VP_LV_5" />
+        <activity android:name=".differentDirection.VP_LV_5_main" />
         <activity android:name=".differentDirection.HSV_LV" />
         <activity android:name=".test.MethodTestActivity" />
         <activity android:name=".differentDirection.VP_SV_3"></activity>

@@ -9,7 +9,7 @@ import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.adapter.SubVpAdapter;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
 
-public class SRL_VP_1 extends AppCompatActivity {
+public class SRL_VP_1_main extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeRefreshLayout;
     private ViewPager viewPager;
