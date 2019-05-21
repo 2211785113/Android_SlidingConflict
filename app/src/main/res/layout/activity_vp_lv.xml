@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".differentDirection.VP_LV_5_main">
+    tools:context=".differentDirection.VP_LV">
 
     <com.example.ruru.android_slidingconflictdemo.ui.CustomVP
         android:id="@+id/viewPager"

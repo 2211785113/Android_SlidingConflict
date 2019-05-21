@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sameDirection.SRL_SV_1">
+    tools:context=".sameDirection.SRL_SV">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/mRefreshLayout"
@@ -24,21 +24,25 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="1000dp"
+                    android:contentDescription="@string/first"
                     android:src="@mipmap/ic_launcher" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
+                    android:contentDescription="@string/second"
                     android:src="@mipmap/ic_launcher" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
+                    android:contentDescription="@string/three"
                     android:src="@mipmap/ic_launcher" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
+                    android:contentDescription="@string/four"
                     android:src="@mipmap/ic_launcher" />
             </LinearLayout>
 

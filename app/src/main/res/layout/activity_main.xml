@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SRL_SV"
-        android:text="1_SRL_SV"
+        android:text="SRL_SV"
         app:layout_constraintTop_toBottomOf="@id/tv1" />
 
 
@@ -28,25 +28,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SRL_RV"
-        android:text="2_SRL_RV"
+        android:text="SRL_RV"
         app:layout_constraintTop_toBottomOf="@id/bt1" />
 
     <Button
         android:id="@+id/bt3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SV_RV"
-        android:text="3_SV_RV"
+        android:onClick="SRL_LV"
+        android:text="SRL_LV"
         app:layout_constraintTop_toBottomOf="@id/bt2" />
-
 
     <Button
         android:id="@+id/bt4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="VP_VP"
-        android:text="4_VP_VP"
+        android:onClick="SV_RV"
+        android:text="SV_RV"
         app:layout_constraintTop_toBottomOf="@id/bt3" />
+
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="VP_VP"
+        android:text="VP_VP"
+        app:layout_constraintTop_toBottomOf="@id/bt4" />
 
 
     <TextView
@@ -55,14 +63,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="DifferentDirection"
-        app:layout_constraintTop_toBottomOf="@id/bt4" />
+        app:layout_constraintTop_toBottomOf="@id/bt5" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SRL_VP"
-        android:text="1_SRL_VP"
+        android:text="SRL_VP"
         app:layout_constraintTop_toBottomOf="@id/tv2" />
 
     <Button
@@ -70,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SV_VP"
-        android:text="2_SV_VP"
+        android:text="SV_VP"
         app:layout_constraintTop_toBottomOf="@id/btn1" />
 
     <Button
@@ -78,7 +86,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="VP_SV"
-        android:text="3_VP_SV"
+        android:text="VP_SV"
         app:layout_constraintTop_toBottomOf="@id/btn2" />
 
     <Button
@@ -86,7 +94,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="LV_VP"
-        android:text="4_LV_VP"
+        android:text="LV_VP"
         app:layout_constraintTop_toBottomOf="@id/btn3" />
 
     <Button
@@ -94,7 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="VP_LV"
-        android:text="5_VP_LV"
+        android:text="VP_LV"
         app:layout_constraintTop_toBottomOf="@id/btn4" />
 
     <TextView

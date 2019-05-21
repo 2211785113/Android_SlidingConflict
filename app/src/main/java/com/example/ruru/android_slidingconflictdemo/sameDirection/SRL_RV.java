@@ -13,7 +13,7 @@ import com.example.ruru.android_slidingconflictdemo.data.DataModel;
 
 import java.util.Date;
 
-public class SRL_RV_2 extends AppCompatActivity {
+public class SRL_RV extends AppCompatActivity {
 
     private SwipeRefreshLayout swipeRefreshLayout;
     private RecyclerView recyclerView;
@@ -39,7 +39,10 @@ public class SRL_RV_2 extends AppCompatActivity {
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                Log.d(getClass().getName(), "onRefresh:refreshTime=" + new Date().getTime());
+
+                Log.d("SRL_RV", "refreshTime=" + new Date().getTime());
+                Log.d("SRL_RV", "swipeRefreshLayout 正在滚动");
+
                 swipeRefreshLayout.setRefreshing(false);
             }
         });
@@ -48,7 +51,9 @@ public class SRL_RV_2 extends AppCompatActivity {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-                Log.d(getClass().getName(), "onScrollStateChanged:scrollTime=" + new Date().getTime());
+
+                Log.d("SRL_RV", "recyclerViewTime=" + new Date().getTime());
+                Log.d("SRL_RV", "recyclerView 正在滚动");
             }
         });
     }

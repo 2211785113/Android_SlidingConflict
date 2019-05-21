@@ -16,17 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".sameDirection.SRL_RV_2" />
-        <activity android:name=".sameDirection.SRL_SV_1" />
-        <activity android:name=".sameDirection.SV_RV_3" />
+        <activity android:name=".sameDirection.SRL_RV" />
+        <activity android:name=".sameDirection.SRL_SV" />
+        <activity android:name=".sameDirection.SV_RV" />
+        <activity android:name=".sameDirection.SRL_LV"></activity>
         <activity android:name=".sameDirection.VP_VP" />
-        <activity android:name=".differentDirection.SRL_VP_1_main" />
-        <activity android:name=".differentDirection.SV_VP_2" />
-        <activity android:name=".differentDirection.LV_VP_4" />
-        <activity android:name=".differentDirection.VP_LV_5_main" />
+        <activity android:name=".differentDirection.SRL_VP" />
+        <activity android:name=".differentDirection.SV_VP" />
+        <activity android:name=".differentDirection.LV_VP" />
+        <activity android:name=".differentDirection.VP_LV" />
         <activity android:name=".differentDirection.HSV_LV" />
         <activity android:name=".test.MethodTestActivity" />
-        <activity android:name=".differentDirection.VP_SV_3"></activity>
+        <activity android:name=".differentDirection.VP_SV"></activity>
     </application>
 
 </manifest>

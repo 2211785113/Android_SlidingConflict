@@ -8,7 +8,7 @@ import com.example.ruru.android_slidingconflictdemo.R;
 /**
  * 没有这种场景。
  */
-public class LV_VP_4 extends AppCompatActivity {
+public class LV_VP extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

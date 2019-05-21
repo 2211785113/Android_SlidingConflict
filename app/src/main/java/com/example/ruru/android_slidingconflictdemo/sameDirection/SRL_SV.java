@@ -11,7 +11,10 @@ import com.example.ruru.android_slidingconflictdemo.R;
 
 import java.util.Date;
 
-public class SRL_SV_1 extends AppCompatActivity {
+/**
+ * refreshTime永远比scroll time大，所以没有滑动冲突。
+ */
+public class SRL_SV extends AppCompatActivity {
 
     private SwipeRefreshLayout mRefreshLayout;
     private ScrollView mScrollView;
@@ -27,7 +30,10 @@ public class SRL_SV_1 extends AppCompatActivity {
         mRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                Log.d(getClass().getName(), "onRefresh:refresh time=" + new Date().getTime());
+
+                Log.d("SRL_SV", "refreshTime=" + new Date().getTime());
+                Log.d("SRL_SV", "swipeRefreshLayout 正在滚动");
+
                 mRefreshLayout.setRefreshing(false);
             }
         });
@@ -35,8 +41,12 @@ public class SRL_SV_1 extends AppCompatActivity {
         mScrollView.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
             @Override
             public void onScrollChanged() {
-                if (mScrollView.getScrollY() == 0)
-                    Log.d(getClass().getName(), "onScrollChanged:scroll time=" + new Date().getTime());
+                if (mScrollView.getScrollY() == 0) {
+
+                    Log.d("SRL_SV", "scrollTime=" + new Date().getTime());
+                    Log.d("SRL_SV", "scrollView 正在滚动");
+
+                }
             }
         });
     }

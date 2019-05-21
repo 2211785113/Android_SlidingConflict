@@ -11,4 +11,8 @@
     <string name="left">左侧</string>
     <string name="right">右侧</string>
 
+    <string name="first">first</string>
+    <string name="second">second</string>
+    <string name="three">three</string>
+    <string name="four">four</string>
 </resources>

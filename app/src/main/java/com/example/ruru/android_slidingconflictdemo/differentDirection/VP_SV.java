@@ -8,7 +8,7 @@ import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.adapter.SubVpAdapter;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
 
-public class VP_SV_3 extends AppCompatActivity {
+public class VP_SV extends AppCompatActivity {
 
     private ViewPager viewPager;
 
