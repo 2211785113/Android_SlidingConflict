@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomLV;
 
 /**
  * ListView
@@ -27,7 +28,7 @@ public class EFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_e, container, false);
-        ListView listView = view.findViewById(R.id.listView);
+        CustomLV listView = view.findViewById(R.id.listView);
         listView.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.item, R.id.tv, DataModel.getStringList1()));
         return view;
     }

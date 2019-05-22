@@ -19,7 +19,6 @@
         <activity android:name=".sameDirection.SRL_RV" />
         <activity android:name=".sameDirection.SRL_SV" />
         <activity android:name=".sameDirection.SV_RV" />
-        <activity android:name=".sameDirection.SRL_LV"></activity>
         <activity android:name=".sameDirection.VP_VP" />
         <activity android:name=".differentDirection.SRL_VP" />
         <activity android:name=".differentDirection.SV_VP" />

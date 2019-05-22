@@ -5,17 +5,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
 
 import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.adapter.SubRvAdapter;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomRV;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomSV;
 
 public class SV_RV extends AppCompatActivity {
 
-    private ScrollView scrollView;
-    private RecyclerView recyclerView;
+    private CustomSV scrollView;
+    private CustomRV recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

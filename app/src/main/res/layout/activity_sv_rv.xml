@@ -9,7 +9,7 @@
     app:layout_constraintRight_toRightOf="parent"
     tools:context=".sameDirection.SV_RV">
 
-    <ScrollView
+    <com.example.ruru.android_slidingconflictdemo.ui.CustomSV
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -24,7 +24,7 @@
                 android:layout_height="100dp"
                 android:text="这是头部" />
 
-            <android.support.v7.widget.RecyclerView
+            <com.example.ruru.android_slidingconflictdemo.ui.CustomRV
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="500dp" />
@@ -36,6 +36,6 @@
 
         </LinearLayout>
 
-    </ScrollView>
+    </com.example.ruru.android_slidingconflictdemo.ui.CustomSV>
 
 </android.support.constraint.ConstraintLayout>
