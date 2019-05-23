@@ -1,125 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
+    android:orientation="vertical"
     tools:context="com.example.ruru.android_slidingconflictdemo.MainActivity">
 
     <TextView
-        android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SameDirection" />
 
-    <Button
-        android:id="@+id/bt1"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SRL_SV"
-        android:text="SRL_SV"
-        app:layout_constraintTop_toBottomOf="@id/tv1" />
-
+        android:gravity="center"
+        android:text="vertical" />
 
     <Button
-        android:id="@+id/bt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SRL_RV"
-        android:text="SRL_RV"
-        app:layout_constraintTop_toBottomOf="@id/bt1" />
+        android:text="SRL_RV" />
 
     <Button
-        android:id="@+id/bt3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="SRL_LV"
-        android:text="SRL_LV"
-        app:layout_constraintTop_toBottomOf="@id/bt2" />
+        android:onClick="SRL_SV"
+        android:text="SRL_SV" />
 
     <Button
-        android:id="@+id/bt4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SV_RV"
-        android:text="SV_RV"
-        app:layout_constraintTop_toBottomOf="@id/bt3" />
+        android:text="SV_RV" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="horizontal" />
 
     <Button
-        android:id="@+id/bt5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="VP_VP"
-        android:text="VP_VP"
-        app:layout_constraintTop_toBottomOf="@id/bt4" />
+        android:text="VP_VP" />
 
 
     <TextView
-        android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="DifferentDirection"
-        app:layout_constraintTop_toBottomOf="@id/bt5" />
+        android:text="DifferentDirection" />
 
     <Button
-        android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SRL_VP"
-        android:text="SRL_VP"
-        app:layout_constraintTop_toBottomOf="@id/tv2" />
+        android:text="SRL_VP" />
 
     <Button
-        android:id="@+id/btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="SV_VP"
-        android:text="SV_VP"
-        app:layout_constraintTop_toBottomOf="@id/btn1" />
+        android:text="SV_VP" />
 
     <Button
-        android:id="@+id/btn3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="VP_SV"
-        android:text="VP_SV"
-        app:layout_constraintTop_toBottomOf="@id/btn2" />
+        android:text="VP_SV" />
 
     <Button
-        android:id="@+id/btn4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="LV_VP"
-        android:text="LV_VP"
-        app:layout_constraintTop_toBottomOf="@id/btn3" />
+        android:text="LV_VP" />
 
     <Button
-        android:id="@+id/btn5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="VP_LV"
-        android:text="VP_LV"
-        app:layout_constraintTop_toBottomOf="@id/btn4" />
+        android:text="VP_LV" />
 
     <TextView
-        android:id="@+id/tv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="test"
-        app:layout_constraintTop_toBottomOf="@id/btn5" />
+        android:text="test" />
 
     <Button
-        android:id="@+id/btn_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="METHOD_TEST"
-        android:text="METHOD_TEST"
-        app:layout_constraintTop_toBottomOf="@id/tv3" />
+        android:text="METHOD_TEST" />
 
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

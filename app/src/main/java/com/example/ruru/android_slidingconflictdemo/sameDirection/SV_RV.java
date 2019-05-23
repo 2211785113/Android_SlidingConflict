@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.MotionEvent;
-import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
 
@@ -18,8 +16,8 @@ import com.example.ruru.android_slidingconflictdemo.ui.CustomSV;
 
 public class SV_RV extends AppCompatActivity {
 
-    private CustomSV scrollView;
-    private CustomRV recyclerView;
+    private ScrollView mScrollView;
+    private RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,28 +29,28 @@ public class SV_RV extends AppCompatActivity {
     }
 
     private void initView() {
-        scrollView = findViewById(R.id.scrollView);
-        recyclerView = findViewById(R.id.recyclerView);
+        mScrollView = findViewById(R.id.scrollView);
+        mRecyclerView = findViewById(R.id.recyclerView);
     }
 
     private void initData() {
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(new SubRvAdapter(this, DataModel.getStringList1()));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        mRecyclerView.setAdapter(new SubRvAdapter(this, DataModel.getStringList1()));
 
-        scrollView.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
+        mScrollView.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
             @Override
             public void onScrollChanged() {
 
-                Log.d("SV_RV", "scrollView 正在滚动");
+                Log.d("SV_RV", "mScrollView 正在滚动");
             }
         });
 
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
 
-                Log.d("SV_RV", "recyclerView 正在滚动");
+                Log.d("SV_RV", "mRecyclerView 正在滚动");
             }
         });
     }

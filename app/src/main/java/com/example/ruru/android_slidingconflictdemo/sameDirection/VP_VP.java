@@ -10,8 +10,8 @@ import com.example.ruru.android_slidingconflictdemo.data.DataModel;
 
 public class VP_VP extends AppCompatActivity {
 
-    private ViewPager viewPager1;
-    private ViewPager viewPager2;
+    private ViewPager mViewPager1;
+    private ViewPager mViewPager2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +23,12 @@ public class VP_VP extends AppCompatActivity {
     }
 
     private void initData() {
-        viewPager1.setAdapter(new SubVpAdapter(getSupportFragmentManager(), DataModel.getFragmentList1()));
-        viewPager2.setAdapter(new SubVpAdapter(getSupportFragmentManager(), DataModel.getFragmentList2()));
+        mViewPager1.setAdapter(new SubVpAdapter(getSupportFragmentManager(), DataModel.getFragmentList1()));
+        mViewPager2.setAdapter(new SubVpAdapter(getSupportFragmentManager(), DataModel.getFragmentList2()));
     }
 
     private void initView() {
-        viewPager1 = findViewById(R.id.viewPager1);
-        viewPager2 = findViewById(R.id.viewPager2);
+        mViewPager1 = findViewById(R.id.viewPager1);
+        mViewPager2 = findViewById(R.id.viewPager2);
     }
 }
