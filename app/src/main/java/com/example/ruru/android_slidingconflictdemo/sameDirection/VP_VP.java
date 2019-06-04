@@ -7,11 +7,12 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.adapter.SubVpAdapter;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomVPSame;
 
 public class VP_VP extends AppCompatActivity {
 
     private ViewPager mViewPager1;
-    private ViewPager mViewPager2;
+    private CustomVPSame mViewPager2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

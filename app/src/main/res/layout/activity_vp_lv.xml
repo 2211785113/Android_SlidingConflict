@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".differentDirection.VP_LV">
+    tools:context=".differentDirection.VP_LV_main">
 
-    <com.example.ruru.android_slidingconflictdemo.ui.CustomVP
+    <com.example.ruru.android_slidingconflictdemo.ui.CustomVPOuter
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </com.example.ruru.android_slidingconflictdemo.ui.CustomVP>
+    </com.example.ruru.android_slidingconflictdemo.ui.CustomVPOuter>
 
 </android.support.constraint.ConstraintLayout>

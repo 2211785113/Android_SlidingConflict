@@ -1,17 +1,16 @@
 package com.example.ruru.android_slidingconflictdemo.differentDirection;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.adapter.SubVpAdapter;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
-import com.example.ruru.android_slidingconflictdemo.ui.CustomVP;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomVPOuter;
 
-public class VP_LV extends AppCompatActivity {
+public class VP_LV_main extends AppCompatActivity {
 
-    private CustomVP viewPager;
+    private CustomVPOuter viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -4,14 +4,24 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
+import android.view.View;
 
 import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.adapter.SubVpAdapter;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomSRL1;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomSRL2;
+import com.example.ruru.android_slidingconflictdemo.ui.CustomVPInner;
 
-public class SRL_VP extends AppCompatActivity {
+import static android.view.KeyEvent.ACTION_DOWN;
+import static android.view.MotionEvent.ACTION_CANCEL;
+import static android.view.MotionEvent.ACTION_MOVE;
+import static android.view.MotionEvent.ACTION_UP;
 
-    private SwipeRefreshLayout swipeRefreshLayout;
+public class SRL_VP_main extends AppCompatActivity {
+
+    private CustomSRL1 swipeRefreshLayout;
     private ViewPager viewPager;
 
     @Override
@@ -24,7 +34,7 @@ public class SRL_VP extends AppCompatActivity {
     }
 
     private void initView() {
-        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
+        swipeRefreshLayout = (CustomSRL1) findViewById(R.id.swipeRefreshLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
     }
 

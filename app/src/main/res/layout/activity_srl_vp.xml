@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
-    tools:context=".differentDirection.SRL_VP">
+    tools:context=".differentDirection.SRL_VP_main">
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <com.example.ruru.android_slidingconflictdemo.ui.CustomSRL1
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,7 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </android.support.v4.widget.SwipeRefreshLayout>
-
+    </com.example.ruru.android_slidingconflictdemo.ui.CustomSRL1>
 
 </android.support.constraint.ConstraintLayout>

@@ -8,19 +8,19 @@ import android.view.MotionEvent;
 import static android.view.MotionEvent.ACTION_MOVE;
 
 /**
- * 不同方向5-外层
+ * different outer
  * Created by SophieRu on 2019/5/9
  */
-public class CustomVP extends ViewPager {
+public class CustomVPOuter extends ViewPager {
 
     private int lastX;
     private int lastY;
 
-    public CustomVP(Context context) {
+    public CustomVPOuter(Context context) {
         super(context);
     }
 
-    public CustomVP(Context context, AttributeSet attrs) {
+    public CustomVPOuter(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

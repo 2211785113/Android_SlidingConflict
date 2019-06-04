@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.ruru.android_slidingconflictdemo.differentDirection.LV_VP;
-import com.example.ruru.android_slidingconflictdemo.differentDirection.SRL_VP;
+import com.example.ruru.android_slidingconflictdemo.differentDirection.SRL_VP_main;
 import com.example.ruru.android_slidingconflictdemo.differentDirection.SV_VP;
-import com.example.ruru.android_slidingconflictdemo.differentDirection.VP_LV;
+import com.example.ruru.android_slidingconflictdemo.differentDirection.VP_LV_main;
 import com.example.ruru.android_slidingconflictdemo.differentDirection.VP_SV;
 import com.example.ruru.android_slidingconflictdemo.sameDirection.SRL_RV;
 import com.example.ruru.android_slidingconflictdemo.sameDirection.SRL_SV;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
     //DifferentDirection
     public void SRL_VP(View v) {
-        startActivity(new Intent(this, SRL_VP.class));
+        startActivity(new Intent(this, SRL_VP_main.class));
     }
 
     public void SV_VP(View v) {
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void VP_LV(View v) {
-        startActivity(new Intent(this, VP_LV.class));
+        startActivity(new Intent(this, VP_LV_main.class));
     }
 
     //test
