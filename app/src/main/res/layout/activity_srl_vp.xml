@@ -8,16 +8,16 @@
     app:layout_constraintRight_toRightOf="parent"
     tools:context=".differentDirection.SRL_VP_main">
 
-    <com.example.ruru.android_slidingconflictdemo.ui.CustomSRL1
+    <com.example.ruru.android_slidingconflictdemo.ui.CustomSRL2
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v4.view.ViewPager
+        <com.example.ruru.android_slidingconflictdemo.ui.CustomVPInner
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-    </com.example.ruru.android_slidingconflictdemo.ui.CustomSRL1>
+    </com.example.ruru.android_slidingconflictdemo.ui.CustomSRL2>
 
 </android.support.constraint.ConstraintLayout>

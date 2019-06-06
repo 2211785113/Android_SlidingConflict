@@ -11,10 +11,12 @@ import android.view.MotionEvent;
  */
 public class CustomVPInner extends ViewPager {
 
+    private float startX;
+    private float startY;
     private float x;
     private float y;
-    private float lastX;
-    private float lastY;
+    private float deltaX;
+    private float deltaY;
 
     public CustomVPInner(Context context) {
         super(context);
@@ -26,28 +28,25 @@ public class CustomVPInner extends ViewPager {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        lastX = ev.getX();
-        lastY = ev.getY();
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
+                startX = ev.getX();
+                startY = ev.getY();
                 getParent().requestDisallowInterceptTouchEvent(true);
                 break;
             case MotionEvent.ACTION_MOVE:
-                float deltaX = x - lastX;
-                float deltaY = y - lastY;
-                if (Math.abs(deltaX) > Math.abs(deltaY)) {
+                x = ev.getX();
+                y = ev.getY();
+                deltaX = Math.abs(x - startX);
+                deltaY = Math.abs(y - startY);
+                if (deltaX > deltaY) {
                     getParent().requestDisallowInterceptTouchEvent(true);
-                } else {
-                    getParent().requestDisallowInterceptTouchEvent(false);
                 }
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
-                getParent().requestDisallowInterceptTouchEvent(false);
                 break;
         }
-        x = ev.getX();
-        y = ev.getY();
         return super.dispatchTouchEvent(ev);
     }
 }

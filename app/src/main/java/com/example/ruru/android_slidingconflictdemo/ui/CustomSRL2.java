@@ -3,6 +3,7 @@ package com.example.ruru.android_slidingconflictdemo.ui;
 import android.content.Context;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 
 /**

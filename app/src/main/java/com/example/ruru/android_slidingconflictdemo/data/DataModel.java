@@ -57,8 +57,8 @@ public class DataModel {
 
     public static List<Fragment> getFragmentList4() {
         List<Fragment> list = new ArrayList<Fragment>();
-        list.add(new EFragment());
-        list.add(new GFragment());
+        list.add(new EFragment());//CustomLV
+        list.add(new GFragment());//LV
         return list;
     }
 }

@@ -21,21 +21,20 @@ import static android.view.MotionEvent.ACTION_UP;
 
 public class SRL_VP_main extends AppCompatActivity {
 
-    private CustomSRL1 swipeRefreshLayout;
-    private ViewPager viewPager;
+    private CustomSRL2 swipeRefreshLayout;
+    private CustomVPInner viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_srl_vp);
-
         initView();
         initData();
     }
 
     private void initView() {
-        swipeRefreshLayout = (CustomSRL1) findViewById(R.id.swipeRefreshLayout);
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        swipeRefreshLayout = (CustomSRL2) findViewById(R.id.swipeRefreshLayout);
+        viewPager = (CustomVPInner) findViewById(R.id.viewPager);
     }
 
     private void initData() {
