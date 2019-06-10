@@ -1,6 +1,7 @@
 package com.example.ruru.android_slidingconflictdemo.ui;
 
 import android.content.Context;
+import android.support.v4.view.ViewCompat;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -35,6 +36,7 @@ public class CustomVPInner extends ViewPager {
                 getParent().requestDisallowInterceptTouchEvent(true);
                 break;
             case MotionEvent.ACTION_MOVE:
+                ViewCompat.setNestedScrollingEnabled(this, true);
                 x = ev.getX();
                 y = ev.getY();
                 deltaX = Math.abs(x - startX);
@@ -45,6 +47,7 @@ public class CustomVPInner extends ViewPager {
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
+                ViewCompat.setNestedScrollingEnabled(this, false);
                 break;
         }
         return super.dispatchTouchEvent(ev);

@@ -24,6 +24,6 @@ public class CustomSRL2 extends SwipeRefreshLayout {
             super.onInterceptTouchEvent(ev);
             return false;
         }
-        return true;
+        return super.onInterceptTouchEvent(ev);
     }
 }
