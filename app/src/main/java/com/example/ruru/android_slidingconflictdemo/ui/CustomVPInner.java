@@ -33,21 +33,20 @@ public class CustomVPInner extends ViewPager {
             case MotionEvent.ACTION_DOWN:
                 startX = ev.getX();
                 startY = ev.getY();
+                ViewCompat.setNestedScrollingEnabled(this, true);
                 getParent().requestDisallowInterceptTouchEvent(true);
                 break;
             case MotionEvent.ACTION_MOVE:
-                ViewCompat.setNestedScrollingEnabled(this, true);
                 x = ev.getX();
                 y = ev.getY();
                 deltaX = Math.abs(x - startX);
                 deltaY = Math.abs(y - startY);
-                if (deltaX > deltaY) {
-                    getParent().requestDisallowInterceptTouchEvent(true);
+                if (deltaX < deltaY) {
+                    getParent().requestDisallowInterceptTouchEvent(false);
                 }
                 break;
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
-                ViewCompat.setNestedScrollingEnabled(this, false);
                 break;
         }
         return super.dispatchTouchEvent(ev);
