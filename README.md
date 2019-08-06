@@ -18,6 +18,8 @@
 * VP 代替 ViewPager
 * SM 代替 SlideMenu
 
+<br/>
+
 ### 事件传递：
 * disTE 代替 dispatchTouchEvent（事件分发）
 * onITE 代替 onInterceptTouchEvent（事件拦截）
@@ -25,11 +27,15 @@
 * reDITE 代替 requestDisallowInterceptTouchEvent（子View要求父View不要拦截事件）
 * setOTL 代替 setOnTouchListener
 
+<br/>
+
 如果大家不了解View的事件分发机制，可以参看文章：
 
 深度理解Android事件分发机制：https://www.jianshu.com/p/80a1bb7ced57
 
 事件冲突实际上就是对事件分发机制的应用。
+
+<br/>
 
 ### 解决事件冲突总结来看有下列几种方法：
 * 父View # onITE 方法：决定事件是否向子View传递。
@@ -37,10 +43,14 @@
 * 子View # setOTL 方法：通过 reDITE 来干预父View事件的分发。
 * 注意：标志位在MOVE事件和DOWN事件中都会起作用。
 
+<br/>
+
 ### 滑动冲突分为三种情况：
 * 同方向；
 * 不同方向；
 * 同方向和不同方向混合。
+
+<br/>
 
 ### 同方向：
 核心要点：
