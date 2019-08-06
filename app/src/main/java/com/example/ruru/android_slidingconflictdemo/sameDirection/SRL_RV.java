@@ -12,8 +12,6 @@ import com.example.ruru.android_slidingconflictdemo.R;
 import com.example.ruru.android_slidingconflictdemo.adapter.SubRvAdapter;
 import com.example.ruru.android_slidingconflictdemo.data.DataModel;
 
-import java.util.Date;
-
 public class SRL_RV extends AppCompatActivity {
 
     private SwipeRefreshLayout mRefreshLayout;

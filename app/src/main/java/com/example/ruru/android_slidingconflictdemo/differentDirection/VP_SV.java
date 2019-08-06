@@ -16,7 +16,6 @@ public class VP_SV extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vp_sv_3);
-
         initView();
         initData();
     }
@@ -27,6 +26,5 @@ public class VP_SV extends AppCompatActivity {
 
     private void initData() {
         viewPager.setAdapter(new SubVpAdapter(getSupportFragmentManager(), DataModel.getFragmentList3()));
-
     }
 }

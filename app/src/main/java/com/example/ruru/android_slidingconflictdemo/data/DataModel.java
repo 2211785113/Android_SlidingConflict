@@ -13,9 +13,6 @@ import com.example.ruru.android_slidingconflictdemo.fragment.GFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by SophieRu on 2019/4/25
- */
 public class DataModel {
 
     public static List<String> getStringList1() {
@@ -57,8 +54,8 @@ public class DataModel {
 
     public static List<Fragment> getFragmentList4() {
         List<Fragment> list = new ArrayList<Fragment>();
-        list.add(new EFragment());//CustomLV
-        list.add(new GFragment());//LV
+        list.add(new EFragment());
+        list.add(new GFragment());
         return list;
     }
 }

@@ -13,9 +13,6 @@ import com.example.ruru.android_slidingconflictdemo.R;
  */
 public class FFragment extends Fragment {
 
-    public FFragment() {
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

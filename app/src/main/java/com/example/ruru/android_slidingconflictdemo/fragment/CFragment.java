@@ -14,17 +14,9 @@ import com.example.ruru.android_slidingconflictdemo.R;
  */
 public class CFragment extends Fragment {
 
-
-    public CFragment() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_c, container, false);
     }
-
 }

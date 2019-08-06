@@ -11,9 +11,6 @@ import com.example.ruru.android_slidingconflictdemo.R;
 
 import java.util.List;
 
-/**
- * Created by SophieRu on 2019/5/7
- */
 public class SubRvAdapter extends RecyclerView.Adapter<SubRvAdapter.MyViewHolder> {
 
     private Context context;

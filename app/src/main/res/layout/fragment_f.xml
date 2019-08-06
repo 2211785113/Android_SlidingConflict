@@ -13,42 +13,66 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/hello_blank_fragment" />
+                android:layout_height="wrap_content"
+                android:text="@string/f_fragment" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/timg"
+                android:scaleType="fitXY" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/timg" />
         </LinearLayout>
 
     </ScrollView>
-
-    <!-- TODO: Update blank fragment layout -->
-
 
 </FrameLayout>

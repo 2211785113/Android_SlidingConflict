@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".fragment.EFragment">
 
-    <com.example.ruru.android_slidingconflictdemo.ui.CustomLV
+    <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></com.example.ruru.android_slidingconflictdemo.ui.CustomLV>
+        android:layout_height="match_parent"></ListView>
 </FrameLayout>

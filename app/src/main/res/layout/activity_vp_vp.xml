@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
     tools:context=".sameDirection.VP_VP">
 
-    <android.support.v4.view.ViewPager
+    <com.example.ruru.android_slidingconflictdemo.sameUI.VP_VP_outer
         android:id="@+id/viewPager1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"></com.example.ruru.android_slidingconflictdemo.sameUI.VP_VP_outer>
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="100dp"
-        android:text="你好，阳光" />
-
-    <com.example.ruru.android_slidingconflictdemo.ui.CustomVPSame
+    <com.example.ruru.android_slidingconflictdemo.sameUI.VP_VP_inner
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tv"></com.example.ruru.android_slidingconflictdemo.ui.CustomVPSame>
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorGreen"></com.example.ruru.android_slidingconflictdemo.sameUI.VP_VP_inner>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

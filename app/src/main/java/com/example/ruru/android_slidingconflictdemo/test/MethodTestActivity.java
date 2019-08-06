@@ -6,13 +6,13 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.example.ruru.android_slidingconflictdemo.R;
-import com.example.ruru.android_slidingconflictdemo.ui.CustomLL;
 
 public class MethodTestActivity extends AppCompatActivity {
 
-    private CustomLL ll;
+    private LinearLayout ll;
     private Button button;
 
     @Override
