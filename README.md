@@ -193,7 +193,7 @@ public class SV_RV_inner extends RecyclerView {
 
 解决：
 
-**内部拦截:**
+**内部拦截：**
 
 SRL_VP_outer：
 ```
@@ -267,8 +267,7 @@ public class SRL_VP_inner extends ViewPager {
 
 * 所以要设置ViewCompat.isNestedScrollingEnabled为true。
 
-</br>
-**外部拦截:**
+**外部拦截：**
 
 参考链接：https://blog.csdn.net/u010386612/article/details/50548977
 
