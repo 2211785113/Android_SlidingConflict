@@ -79,7 +79,7 @@ SV/RV：没有重写disTE方法。向上滚动，效果正常。
 
 解决：
 
-内部拦截：内部滑动时，执行getparent().reDITE(true);
+**内部拦截：内部滑动时，执行getparent().reDITE(true);**
 ```
 public class SV_SV_inner extends ScrollView {
     public SV_SV_inner(Context context) {
@@ -96,7 +96,7 @@ public class SV_SV_inner extends ScrollView {
 }
 ```
 
-外部拦截：
+**外部拦截：**
 ```
 public class SV_SV_outer extends ScrollView {
     public SV_SV_outer(Context context) {
@@ -129,7 +129,7 @@ RV：没有重写dispatchTouchEvent方法。
 
 解决：
 
-内部拦截：内部滑动时，通过reDITE设置为true使事件向子View分发。
+**内部拦截：内部滑动时，通过reDITE设置为true使事件向子View分发。**
 
 通过打印日志会发现：当内部滑动的时候，外部没有在滑动。效果实现。
 
@@ -193,7 +193,7 @@ public class SV_RV_inner extends RecyclerView {
 
 解决：
 
-内部拦截：
+**内部拦截：**
 
 SRL_VP_outer：
 ```
@@ -267,8 +267,8 @@ public class SRL_VP_inner extends ViewPager {
 
 * 所以要设置ViewCompat.isNestedScrollingEnabled为true。
 
-
-外部拦截：
+</br>
+**外部拦截：**
 
 参考链接：https://blog.csdn.net/u010386612/article/details/50548977
 
