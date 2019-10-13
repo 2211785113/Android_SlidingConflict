@@ -267,6 +267,36 @@ public class SRL_VP_inner extends ViewPager {
 
 * 所以要设置ViewCompat.isNestedScrollingEnabled为true。
 
+</br>
+内部解决第一种方法：VP内部加这句：ViewCompat.setNestedScrollingEnabled(this, true);
+
+内部解决第二种方法：重写SRL#reDITE。
+
+因为SRL继承ViewGroup类，
+
+所以仿照ViewGroup的reDITE重写SRL的reDITE方法，不写super，class拿到变量名”mGroupFlags”。
+
+```
+@Override
+    public void requestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+//        super.requestDisallowInterceptTouchEvent(b);
+        Class cls = ViewGroup.class;
+        try {
+            Field field = cls.getField("mGroupFlags");
+            int c = (int) field.get(this);
+            if (disallowIntercept) {
+                field.set(this, 2900051);
+            } else {
+                field.set(this, 2245715);
+            }
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+    }
+```    
+
 **外部拦截：**
 
 参考链接：https://blog.csdn.net/u010386612/article/details/50548977
