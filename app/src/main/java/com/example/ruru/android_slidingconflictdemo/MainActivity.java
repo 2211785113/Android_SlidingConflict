@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.ruru.android_slidingconflictdemo.differentDirection.OuterTestActivity;
 import com.example.ruru.android_slidingconflictdemo.differentDirection.SRL_VP;
 import com.example.ruru.android_slidingconflictdemo.differentDirection.VP_LV;
 import com.example.ruru.android_slidingconflictdemo.differentDirection.VP_SV;
@@ -60,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void VP_LV(View v) {
         startActivity(new Intent(this, VP_LV.class));
+    }
+
+    public void out_test(View v) {
+        startActivity(new Intent(this, OuterTestActivity.class));
     }
 
     //test

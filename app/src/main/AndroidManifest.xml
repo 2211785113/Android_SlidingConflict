@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".sameDirection.SRL_RV" />
         <activity android:name=".sameDirection.SRL_SV" />
@@ -25,7 +21,14 @@
         <activity android:name=".differentDirection.SRL_VP" />
         <activity android:name=".differentDirection.VP_LV" />
         <activity android:name=".test.MethodTestActivity" />
-        <activity android:name=".differentDirection.VP_SV"/>
+        <activity android:name=".differentDirection.VP_SV" />
+        <activity android:name=".differentDirection.OuterTestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
